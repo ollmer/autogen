@@ -1,5 +1,5 @@
+https://github.com/ollmer/autogen/archive/gaia_oss.zip
 googlesearch-python
-git+https://github.com/ollmer/autogen.git@gaia_oss
 youtube_transcript_api
 mammoth
 puremagic

@@ -142,7 +142,7 @@ web_surfer = WebSurferAgent(
     is_termination_msg=lambda x: x.get("content", "").rstrip().find("TERMINATE") >= 0,
     code_execution_config=False,
     browser_config={
-        "bing_api_key": os.environ["BING_API_KEY"],
+        "bing_api_key": os.environ.get("BING_API_KEY", "1"),
         "viewport_size": 1024 * 5,
         "downloads_folder": "coding",
         "request_kwargs": {
