@@ -1,4 +1,11 @@
-/autogen[websurfer]
+googlesearch-python
+pyautogen[websurfer]
 youtube_transcript_api
 mammoth
 puremagic
+pydub
+markdownify
+python-pptx
+easyocr
+SpeechRecognition[whisper-local]
+pathvalidate

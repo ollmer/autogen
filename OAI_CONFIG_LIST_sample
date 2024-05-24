@@ -20,5 +20,12 @@
         "base_url": "<your Azure OpenAI API base here>",
         "api_type": "azure",
         "api_version": "2024-02-15-preview"
-    }
+    },
+    // sample of OSS model usage
+    {
+        "base_url": "https://api.together.xyz/v1",
+        "model": "meta-llama/Llama-3-70b-chat-hf",
+        "api_key": "<your together.ai API key>",
+        "tags": ["llm", "together"]
+    },
 ]

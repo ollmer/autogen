@@ -9,6 +9,7 @@ import mimetypes
 import time
 import pathlib
 import pathvalidate
+from googlesearch import search
 from urllib.parse import urljoin, urlparse, unquote, parse_qs
 from urllib.request import url2pathname
 from typing import Any, Dict, List, Optional, Union, Tuple
@@ -224,7 +225,9 @@ class SimpleTextBrowser:
         return results  # type: ignore[no-any-return]
 
     def _bing_search(self, query: str) -> None:
-        results = self._bing_api_call(query)
+        # results = self._bing_api_call(query)
+        g_results = search(query, advanced=True)
+        results = {"webPages": {"value": [{"name":r.title, "url":r.url, "snippet":r.description} for r in g_results]}}
 
         def _prev_visit(url):
             for i in range(len(self.history) - 1, -1, -1):
