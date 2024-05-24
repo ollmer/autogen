@@ -1,5 +1,5 @@
 googlesearch-python
-pyautogen[websurfer]
+git+https://github.com/ollmer/autogen.git@gaia_oss
 youtube_transcript_api
 mammoth
 puremagic
